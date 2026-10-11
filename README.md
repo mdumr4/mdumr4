@@ -7,7 +7,7 @@
 
 <!-- Dynamic Typing SVG Header -->
 <a href="https://github.com/mdumr4">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=1000&color=38BDF8&center=true&vCenter=true&width=750&lines=%3E+Hi+there%2C+I'm+Mohammed+Umar+F+%F0%9F%91%8B;%3E+AI+Systems+Architect+%26+Multimodal+ML+Engineer;%3E+Engineering+sub-50ms+native+C%2B%2B+%26+PyTorch+pipelines;%3E+Building+Enterprise+RAG%2C+Vision+%26+Autonomous+Agents" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=1000&color=38BDF8&center=true&vCenter=true&width=750&lines=%3E+Hi+there%2C+I'm+Mohammed+Umar+F+%F0%9F%91%8B;%3E+AI+Systems+Architect+%26+Multimodal+ML+Engineer;%3E+Engineering+production+multimodal+%26+RAG+pipelines;%3E+Building+Enterprise+Vision%2C+Search+%26+Autonomous+Agents" alt="Typing SVG" />
 </a>
 
 <br/>
@@ -18,7 +18,7 @@
     <img src="https://img.shields.io/badge/Status-Building_Next--Gen_AI-0284c7?style=for-the-badge&logo=codeforces&logoColor=white" alt="Status" />
   </a>
   <a href="https://github.com/mdumr4">
-    <img src="https://img.shields.io/badge/Focus-Low--Latency_AI_&_Vision-8b5cf6?style=for-the-badge&logo=pytorch&logoColor=white" alt="Focus" />
+    <img src="https://img.shields.io/badge/Focus-Multimodal_AI_%26_RAG-8b5cf6?style=for-the-badge&logo=pytorch&logoColor=white" alt="Focus" />
   </a>
   <a href="#">
     <img src="https://img.shields.io/badge/Location-India_%7C_Remote-10b981?style=for-the-badge&logo=googlemaps&logoColor=white" alt="Location" />
@@ -38,13 +38,13 @@
 engineer:
   name: "Mohammed Umar F"
   title: "AI Systems Architect & Multimodal ML Engineer"
-  core_philosophy: "Production-first intelligence — bridging bare-metal OS systems with frontier neural transformers."
+  core_philosophy: "Production-first intelligence — bridging scalable data architectures with frontier neural transformers."
   specializations:
-    - low_latency_systems: "Sub-50ms native C++17 Windows TSF input method engines & IPC pipes"
     - multimodal_deep_learning: "Vision-Language fusion (DINOv2, ResNet34, DistilBERT, cross-attention)"
     - information_retrieval: "Two-stage hybrid RAG (FAISS dense + SPLADE-v3 sparse + Cross-Encoders)"
+    - entity_resolution: "Million-scale record linkage with TF-IDF n-gram inverted indexing & Levenshtein"
     - autonomous_agents: "Stealth Chrome MV3 DOM automation, GPT-4o-mini lead qualification & Supabase"
-  current_quest: "Scaling real-time multimodal inference pipelines and low-latency on-device AI interfaces"
+  current_quest: "Scaling production multimodal inference pipelines, RAG systems, and enterprise agent workflows"
 ```
 
 ---
@@ -61,24 +61,6 @@ engineer:
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td>
-        <a href="https://github.com/mdumr4/AI-Keyboard">
-          <b>⌨️ AI-Keyboard</b>
-        </a><br/>
-        <sub>OS-Level Native AI Keyboard</sub>
-      </td>
-      <td>
-        <img src="https://img.shields.io/badge/Low--Latency-C%2B%2B%20%7C%20AI-0284c7?style=flat-square" /><br/>
-        System Architecture
-      </td>
-      <td>
-        Native Windows <b>Text Services Framework (TSF)</b> in C++17 communicating via named pipe IPC with a multi-threaded Python AI engine for non-blocking inference.
-      </td>
-      <td>
-        <b>&lt; 50ms</b> ghost text latency
-      </td>
-    </tr>
     <tr>
       <td>
         <a href="https://github.com/mdumr4/resume-ranker">
@@ -199,7 +181,6 @@ engineer:
 #### 💻 Core Languages & Runtimes
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/C%2B%2B17-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" />
   <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
   <img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white" />
@@ -230,9 +211,8 @@ engineer:
   <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white" />
 </p>
 
-#### ⚙️ Low-Latency Systems, Automation & Cloud
+#### ⚙️ Automation, Backend & Cloud Infrastructure
 <p align="center">
-  <img src="https://img.shields.io/badge/Windows_TSF_(Win32)-0078D4?style=for-the-badge&logo=windows&logoColor=white" />
   <img src="https://img.shields.io/badge/Chrome_Extensions_(MV3)-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white" />
   <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" />
   <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" />

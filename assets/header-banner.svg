@@ -123,7 +123,7 @@
     <!-- Extra Floating Math/Data Particles -->
     <text x="180" y="110" fill="#64748b" class="badge-text particle">f(x)=W·x+b</text>
     <text x="290" y="70" fill="#64748b" class="badge-text particle" style="animation-delay: 1.5s;">dim: 768</text>
-    <text x="250" y="210" fill="#64748b" class="badge-text particle" style="animation-delay: 0.8s;">latency: &lt;50ms</text>
+    <text x="250" y="210" fill="#64748b" class="badge-text particle" style="animation-delay: 0.8s;">recall: 99.4%</text>
   </g>
 
   <!-- Left Content Block -->
@@ -143,34 +143,34 @@
 
     <!-- Description Paragraph -->
     <text x="0" y="146" fill="#94a3b8" font-family="'Segoe UI', system-ui, sans-serif" font-size="14.5" font-weight="400">
-      Engineering high-performance intelligence: from bare-metal C++ input frameworks
+      Engineering high-performance intelligence: from large-scale multimodal vision
     </text>
     <text x="0" y="168" fill="#94a3b8" font-family="'Segoe UI', system-ui, sans-serif" font-size="14.5" font-weight="400">
-      and GPU-accelerated vision transformers to low-latency RAG and automated agents.
+      transformers and hybrid RAG search to autonomous web agents and scalable workflows.
     </text>
 
     <!-- High-Impact Architecture Pill Badges -->
     <g transform="translate(0, 198)">
       <!-- Pill 1 -->
       <g transform="translate(0, 0)">
-        <rect x="0" y="0" width="168" height="32" rx="8" fill="#0f172a" stroke="#0284c7" stroke-width="1" />
-        <text x="14" y="20.5" fill="#38bdf8" class="badge-text">⚡ Sub-50ms Low-Latency</text>
+        <rect x="0" y="0" width="180" height="32" rx="8" fill="#0f172a" stroke="#0284c7" stroke-width="1" />
+        <text x="14" y="20.5" fill="#38bdf8" class="badge-text">⚡ High-Throughput ML</text>
       </g>
 
       <!-- Pill 2 -->
-      <g transform="translate(178, 0)">
+      <g transform="translate(190, 0)">
         <rect x="0" y="0" width="188" height="32" rx="8" fill="#0f172a" stroke="#6366f1" stroke-width="1" />
         <text x="14" y="20.5" fill="#818cf8" class="badge-text">🧠 Multimodal Transformers</text>
       </g>
 
       <!-- Pill 3 -->
-      <g transform="translate(376, 0)">
+      <g transform="translate(388, 0)">
         <rect x="0" y="0" width="180" height="32" rx="8" fill="#0f172a" stroke="#8b5cf6" stroke-width="1" />
         <text x="14" y="20.5" fill="#c084fc" class="badge-text">🔍 Hybrid RAG &amp; SPLADE</text>
       </g>
 
       <!-- Pill 4 -->
-      <g transform="translate(566, 0)">
+      <g transform="translate(578, 0)">
         <rect x="0" y="0" width="155" height="32" rx="8" fill="#0f172a" stroke="#10b981" stroke-width="1" />
         <text x="14" y="20.5" fill="#34d399" class="badge-text">🤖 Autonomous Agents</text>
       </g>
