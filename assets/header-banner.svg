@@ -1,0 +1,179 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d" />
+      <stop offset="50%" stop-color="#0c1326" />
+      <stop offset="100%" stop-color="#070a14" />
+    </linearGradient>
+
+    <!-- Border Gradient -->
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#818cf8" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#c084fc" stop-opacity="0.8" />
+    </linearGradient>
+
+    <!-- Glowing Text Gradients -->
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="50%" stop-color="#f1f5f9" />
+      <stop offset="100%" stop-color="#e2e8f0" />
+    </linearGradient>
+
+    <linearGradient id="subGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#a855f7" />
+    </linearGradient>
+
+    <!-- Ambient Glow Filters -->
+    <filter id="glowCyan" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="15" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="glowPurple" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="25" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#1e293b" stroke-width="0.7" stroke-opacity="0.35" />
+      <circle cx="0" cy="0" r="1.2" fill="#38bdf8" fill-opacity="0.3" />
+    </pattern>
+  </defs>
+
+  <style>
+    @keyframes pulseNode {
+      0%, 100% { transform: scale(1); opacity: 0.8; }
+      50% { transform: scale(1.3); opacity: 1; }
+    }
+    @keyframes dashLine {
+      to { stroke-dashoffset: -40; }
+    }
+    @keyframes floatParticle {
+      0% { transform: translateY(0px); opacity: 0.3; }
+      50% { transform: translateY(-8px); opacity: 0.8; }
+      100% { transform: translateY(0px); opacity: 0.3; }
+    }
+    .node-pulse { animation: pulseNode 3s infinite ease-in-out; transform-origin: center; }
+    .node-pulse-fast { animation: pulseNode 2s infinite ease-in-out; transform-origin: center; }
+    .stream-line { stroke-dasharray: 6, 6; animation: dashLine 2s linear infinite; }
+    .particle { animation: floatParticle 4s ease-in-out infinite; }
+    .main-title { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; font-weight: 800; letter-spacing: -0.5px; }
+    .sub-title { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; font-weight: 600; letter-spacing: 1.5px; }
+    .badge-text { font-family: 'SF Mono', Consolas, 'Liberation Mono', Menlo, monospace; font-size: 11.5px; font-weight: 500; }
+  </style>
+
+  <!-- Base Card -->
+  <rect x="2" y="2" width="1196" height="336" rx="20" fill="url(#bgGradient)" stroke="url(#borderGrad)" stroke-width="1.8" />
+
+  <!-- Background Grid -->
+  <rect x="3" y="3" width="1194" height="334" rx="19" fill="url(#grid)" />
+
+  <!-- Ambient Light Orbs -->
+  <circle cx="1000" cy="140" r="140" fill="#6366f1" fill-opacity="0.12" filter="url(#glowPurple)" />
+  <circle cx="150" cy="80" r="120" fill="#0284c7" fill-opacity="0.10" filter="url(#glowCyan)" />
+  <circle cx="650" cy="280" r="90" fill="#a855f7" fill-opacity="0.08" filter="url(#glowPurple)" />
+
+  <!-- Circuit / Neural Nodes on Right Side -->
+  <g id="neural-mesh" transform="translate(760, 20)">
+    <!-- Connection Lines -->
+    <line x1="120" y1="70" x2="230" y2="40" stroke="#4338ca" stroke-width="1.5" stroke-opacity="0.6" />
+    <line x1="230" y1="40" x2="330" y2="100" stroke="#6366f1" stroke-width="1.5" stroke-opacity="0.7" />
+    <line x1="120" y1="70" x2="160" y2="170" stroke="#0284c7" stroke-width="1.5" stroke-opacity="0.6" />
+    <line x1="160" y1="170" x2="270" y2="150" stroke="#818cf8" stroke-width="1.8" stroke-opacity="0.8" />
+    <line x1="270" y1="150" x2="330" y2="100" stroke="#a855f7" stroke-width="1.5" stroke-opacity="0.6" />
+    <line x1="160" y1="170" x2="220" y2="250" stroke="#38bdf8" stroke-width="1.5" stroke-opacity="0.7" />
+    <line x1="220" y1="250" x2="320" y2="220" stroke="#6366f1" stroke-width="1.5" stroke-opacity="0.7" />
+    <line x1="270" y1="150" x2="320" y2="220" stroke="#c084fc" stroke-width="1.5" stroke-opacity="0.6" />
+    <line x1="330" y1="100" x2="380" y2="160" stroke="#38bdf8" stroke-width="1.8" stroke-opacity="0.7" />
+    <line x1="320" y1="220" x2="380" y2="160" stroke="#818cf8" stroke-width="1.5" stroke-opacity="0.8" />
+
+    <!-- Animated Data Stream Lines -->
+    <line x1="120" y1="70" x2="270" y2="150" stroke="#38bdf8" stroke-width="1.6" class="stream-line" stroke-opacity="0.9" />
+    <line x1="270" y1="150" x2="380" y2="160" stroke="#c084fc" stroke-width="1.6" class="stream-line" stroke-opacity="0.9" />
+
+    <!-- Node Rings and Core Circles -->
+    <circle cx="120" cy="70" r="14" fill="#0284c7" fill-opacity="0.15" stroke="#38bdf8" stroke-width="1" />
+    <circle cx="120" cy="70" r="5" fill="#38bdf8" class="node-pulse" />
+
+    <circle cx="230" cy="40" r="10" fill="#4338ca" fill-opacity="0.2" stroke="#818cf8" stroke-width="1" />
+    <circle cx="230" cy="40" r="4" fill="#a5b4fc" />
+
+    <circle cx="330" cy="100" r="16" fill="#7c3aed" fill-opacity="0.2" stroke="#c084fc" stroke-width="1.2" />
+    <circle cx="330" cy="100" r="6" fill="#c084fc" class="node-pulse" />
+
+    <circle cx="160" cy="170" r="12" fill="#0284c7" fill-opacity="0.2" stroke="#0ea5e9" stroke-width="1" />
+    <circle cx="160" cy="170" r="4.5" fill="#38bdf8" />
+
+    <circle cx="270" cy="150" r="22" fill="#4f46e5" fill-opacity="0.25" stroke="#818cf8" stroke-width="1.5" />
+    <circle cx="270" cy="150" r="8" fill="#ffffff" class="node-pulse-fast" filter="url(#glowCyan)" />
+
+    <circle cx="220" cy="250" r="13" fill="#0369a1" fill-opacity="0.2" stroke="#38bdf8" stroke-width="1" />
+    <circle cx="220" cy="250" r="5" fill="#7dd3fc" class="node-pulse" />
+
+    <circle cx="320" cy="220" r="15" fill="#6d28d9" fill-opacity="0.2" stroke="#a855f7" stroke-width="1" />
+    <circle cx="320" cy="220" r="5" fill="#c084fc" />
+
+    <circle cx="380" cy="160" r="18" fill="#0284c7" fill-opacity="0.2" stroke="#38bdf8" stroke-width="1.5" />
+    <circle cx="380" cy="160" r="7" fill="#38bdf8" class="node-pulse" />
+
+    <!-- Extra Floating Math/Data Particles -->
+    <text x="180" y="110" fill="#64748b" class="badge-text particle">f(x)=W·x+b</text>
+    <text x="290" y="70" fill="#64748b" class="badge-text particle" style="animation-delay: 1.5s;">dim: 768</text>
+    <text x="250" y="210" fill="#64748b" class="badge-text particle" style="animation-delay: 0.8s;">latency: &lt;50ms</text>
+  </g>
+
+  <!-- Left Content Block -->
+  <g transform="translate(60, 48)">
+    <!-- Top Micro Tag -->
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="220" height="28" rx="14" fill="#1e293b" fill-opacity="0.75" stroke="#38bdf8" stroke-opacity="0.4" stroke-width="1" />
+      <circle cx="14" cy="14" r="4" fill="#10b981" />
+      <text x="26" y="18" fill="#94a3b8" class="badge-text">PORTFOLIO &amp; REPO INDEX</text>
+    </g>
+
+    <!-- Main Name -->
+    <text x="0" y="76" fill="url(#textGrad)" class="main-title" font-size="44">Mohammed Umar F</text>
+
+    <!-- Subtitle / Identity -->
+    <text x="0" y="112" fill="url(#subGrad)" class="sub-title" font-size="18">AI SYSTEMS ARCHITECT &amp; MULTIMODAL ENGINEER</text>
+
+    <!-- Description Paragraph -->
+    <text x="0" y="146" fill="#94a3b8" font-family="'Segoe UI', system-ui, sans-serif" font-size="14.5" font-weight="400">
+      Engineering high-performance intelligence: from bare-metal C++ input frameworks
+    </text>
+    <text x="0" y="168" fill="#94a3b8" font-family="'Segoe UI', system-ui, sans-serif" font-size="14.5" font-weight="400">
+      and GPU-accelerated vision transformers to low-latency RAG and automated agents.
+    </text>
+
+    <!-- High-Impact Architecture Pill Badges -->
+    <g transform="translate(0, 198)">
+      <!-- Pill 1 -->
+      <g transform="translate(0, 0)">
+        <rect x="0" y="0" width="168" height="32" rx="8" fill="#0f172a" stroke="#0284c7" stroke-width="1" />
+        <text x="14" y="20.5" fill="#38bdf8" class="badge-text">⚡ Sub-50ms Low-Latency</text>
+      </g>
+
+      <!-- Pill 2 -->
+      <g transform="translate(178, 0)">
+        <rect x="0" y="0" width="188" height="32" rx="8" fill="#0f172a" stroke="#6366f1" stroke-width="1" />
+        <text x="14" y="20.5" fill="#818cf8" class="badge-text">🧠 Multimodal Transformers</text>
+      </g>
+
+      <!-- Pill 3 -->
+      <g transform="translate(376, 0)">
+        <rect x="0" y="0" width="180" height="32" rx="8" fill="#0f172a" stroke="#8b5cf6" stroke-width="1" />
+        <text x="14" y="20.5" fill="#c084fc" class="badge-text">🔍 Hybrid RAG &amp; SPLADE</text>
+      </g>
+
+      <!-- Pill 4 -->
+      <g transform="translate(566, 0)">
+        <rect x="0" y="0" width="155" height="32" rx="8" fill="#0f172a" stroke="#10b981" stroke-width="1" />
+        <text x="14" y="20.5" fill="#34d399" class="badge-text">🤖 Autonomous Agents</text>
+      </g>
+    </g>
+  </g>
+</svg>

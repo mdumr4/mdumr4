@@ -1,0 +1,26 @@
+# Antigravity IDE and Agent Frameworks (CRITICAL: Never track in Git)
+.agent/
+.agents/
+AGENTS.md
+
+# OS and Editor Artifacts
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Python Environments & Caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+
+# Scratch & Logs
+*.log
+scratch/
+tmp/
+temp/
